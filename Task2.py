@@ -35,11 +35,6 @@ for call in calls:
         total_call_time[answering_number] = 0
     total_call_time[answering_number] += duration
 
-telephone_number = None
-longest_time = 0
-for number, time in total_call_time.items():
-    if time > longest_time:
-        telephone_number = number
-        longest_time = time 
+longest_duration = max(total_call_time.items(), key=lambda x: x[1])
 
-print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(telephone_number, longest_time))
+print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(*longest_duration))
