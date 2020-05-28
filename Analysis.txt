@@ -1,0 +1,25 @@
+The inputs for these problems are the lists `texts` and `calls`.
+Let m, n denote the length of the lists `texts`, `calls` respectively.
+
+
+Task0:
+Time Complexity: O(1)
+List elements can be accessed in constant time.
+
+
+Task1:
+Time Complexity: O(m + n)
+The lists `texts` and `calls` can be iterated over in linear time. Their lengths can be calculated in constant time.
+
+
+Task2:
+Time Complexity: O(n)
+The list `calls` can be iterated over in linear time. In worst case scenario, the dictionary `total_call_time` can have 2*n entries, which is still linear.
+
+Task3:
+Time Complexity: O(n*logn)
+The list `calls` can be iterated over in linear time. In worst case scenario, the list `area_codes` can have 2*n entries, which is still linear. This list can be sorted in n*logn time.
+
+Task4:
+Time Complexity: O((m+n)*log(m+n))
+The lists `texts` and `calls` can be iterated over in linear time. In worst case scenario, the set `telemarketers` can have 2*(m+n) entries, which is still linear. This set can be sorted in (m+n)*log(m+n) time.
